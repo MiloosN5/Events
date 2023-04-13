@@ -1,2 +1,2 @@
-# Local_Events
+# Events
  Use of different JavaScript events with examples
