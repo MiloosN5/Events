@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Bootstrap -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- include external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>EVENTS</h1>
+        <h3 id="deviceMessage"></h3>
+    </header>
+    <main id="mainContainer">
+        <!----------------------------- CLICK & CHANGE -------------------------------->
+        <section class="borderFill">
+            <h2>Click & Change Event</h2>
+            <h5>Pick color and toggle between border & fill mode.</h5>
+            <div class="borderFill__controls">
+                <input type="color" id="borderFill__controls__input">
+                <button>BORDER MODE</button>
+                <button>FILL MODE</button>
+                <button>RESET</button>
+            </div>
+            <div class="borderFill__icons">
+                <div class="borderFill__icons__icon">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+                <div class="borderFill__icons__icon">
+                    <span  class="material-symbols-outlined">favorite</span>
+                </div>
+                <div class="borderFill__icons__icon">
+                    <span class="material-symbols-outlined">check_box</span>
+                </div>
+            </div>
+        </section>
+        
+        <!----------------------------- CHANGE -------------------------------->
+        <section class="optionSelect">
+            <h2>Change Event (Select)</h2>
+            <h5>Pick your favourite artist and you will see feedback message.</h5>
+            <div class="optionSelect__dropwmenu">
+                <select>
+                    <option>Option1</option>
+                    <option>Option2</option>
+                    <option>Option3</option>
+                    <option>Option4</option>
+                    <option>Option5</option>
+                </select>
+            <div class="optionSelect__output"></div>
+            </div>
+        </section>
+
+        <!----------------------------- CLICK -------------------------------->
+        <section class="colorPick">
+            <h2>Click Event (List)</h2>
+            <h5>Pick your favourite color and you will see feedback message.</h5>
+            <div class="colorPick__wrapper"> 
+                <div class="colorPick__list">
+                    <div>
+                        <p>Select</p>
+                    </div>
+                    <ul>
+                        <li id="orangeColor">Orange</li>
+                        <li id="blueColor">Blue</li>
+                        <li id="yellowColor">Yellow</li>
+                        <li id="brownColor">Brown</li>
+                    </ul>
+                </div>
+                <span class="colorPick__output"></span>
+            </div>
+        </section>
+
+        <!----------------------------- HOVER -------------------------------->
+        <section class="colorPalette">
+            <h2>Hover (Color palette)</h2>
+            <h5>See the difference after hovering.</h5>
+            <!-- ANIMATION/TRANSITION -->
+            <div class="colorPalette__wrapper">
+                <div class="colorPalette__wrapper_animation">
+                    <h4>TRANSITIONEND</h4>
+                    <div class="dirtyBlue"><p>Dirty Blue</p></div>
+                    <div class="bone"><p>Bone</p></div>
+                    <div class="summerGreen"><p>Summer Green</p></div>
+                </div>
+                <!-- MOUSEOVER/MOUSEOUT -->
+                <div class="colorPalette__wrapper_mouseout">
+                    <h4>MOUSEOUT</h4>
+                    <div class="dirtyBlue"><p>Dirty Blue</p></div>
+                    <div class="bone"><p>Bone</p></div>
+                    <div class="summerGreen"><p>Summer Green</p></div>
+                </div>    
+            </div>
+        </section>
+
+        <!----------------------------- KEYDOWN -------------------------------->
+        <section class="keydownEvent">
+            <h2>Keydown Event</h2>
+            <h5>Synchronic output of the added keys.</h5>
+            <label for="keydownEvent__input">ADD KEYS</label>
+            <input type="text" id="keydownEvent__input">
+            <div class="keydownEvent__userOutput"></div>
+        </section>
+    </main>
+
+    <!-- JavaScript --> 
+    <script src="script.js"></script>
+</body>
+</html>
